@@ -1,0 +1,72 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: rgb(41, 41, 41);
+}
+
+.navBar{
+    width: 1250px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.logo{
+    height: 80px;
+}
+
+.searchBar{
+    background-color: rgba(128, 128, 128, 0.57);
+    padding: 12px;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    width: 300px;
+    color: white;
+}
+
+.searchBar:focus{
+    outline: none;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.414) ;
+}
+
+
+.searchBtn{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: whitesmoke;
+    margin-left: -26px;
+    cursor: pointer;
+    
+}
+
+
+.search-flex{
+    display: flex;
+    align-items: center;
+}
+
+#notFound{
+    text-align: center;
+    margin-top: 210px;
+    color: white;
+}
+
+.movieContainer{
+    width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    color: white;
+}
+
+.poster{
+    border-radius: 14px;
+}
+
+.d-none{
+    display: none; 
+}

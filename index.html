@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navBar">
+      <a href=""><img src="logo.jpg" alt="" class="logo" /></a>
+      <div class="search-flex">
+        <input
+          onchange="searchMovie()"
+          type="text"
+          class="searchBar"
+          placeholder="Search any movie..."
+          id="movieName"
+        />
+
+        <button onclick="searchMovie()" class="searchBtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-binoculars"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div id="notFound" class="d-none">
+      <h1 class="icon">😢</h1>
+      <h2>Couldn't Find "<span id="nf-name"></span>" !</h2>
+      <p>Sorry, couldn't search this movie, Please try again</p>
+    </div>
+
+    <div id="Found" class="movieContainer d-none">
+      <div>
+        <h3 class="Title" id="Title">Avengers</h3>
+        <p class="desc" id="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          molestias earum maiores quam cupiditate ad a veritatis sunt iste
+          veniam.
+        </p>
+        <p>Released on: <span id="Released"></span></p>
+        <p>Rated: <span id="Rated"></span></p>
+        <p>Actors: <span id="Actors"></span></p>
+        <p>Awards: <span id="Awards"></span></p>
+        <p>Language: <span id="Language"></span></p>
+        <p>Ratings: <span id="Ratings"></span></p>
+      </div>
+      <img
+        id="Poster"
+        class="poster"
+        src="https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg" alt="" srcset=""/>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
